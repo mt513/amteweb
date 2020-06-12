@@ -38,7 +38,7 @@
                 <img class="m-t-20 p-b-20" src="{{URL::asset('img/homecentercolored.png')}}">
               
             </div>
- <p class="p-t-10 tac m-0" style="font-size:1rem;"> <q><i>Our success is measured by our achievments</i></q></p>
+ <p class="p-t-10 tac m-0 fw400" style="font-size:0.8rem;"> <q><i>Our success is measured by our achievments</i></q></p>
 
         </main>
 
