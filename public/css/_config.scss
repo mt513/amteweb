@@ -1,10 +1,10 @@
 $max: 5;
-$offset: 1;
+$offset: 0.5;
 $unit: "rem";
 @mixin looper($className, $styleName) {
     $i: 0;
     @while $i<=$max {
-        #{$className + $i} {
+        #{$className + $i*10} {
             #{$styleName}: #{$i + $unit};
         }
         $i: $i + $offset;
@@ -176,38 +176,104 @@ $actionColor: #e49162;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     letter-spacing: -1px;
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 h5 {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 h6 {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
-.tal{
+
+
+.ls1 {
+    letter-spacing: 1px;
+}
+.ls2 {
+    letter-spacing: 2px;
+}
+.ls3 {
+    letter-spacing: 3px;
+}
+.ls4 {
+    letter-spacing: 4px;
+}
+.ls5 {
+    letter-spacing: 5px;
+}
+
+.lsm1 {
+    letter-spacing: -1px;
+}
+.lsm2 {
+    letter-spacing: -2px;
+}
+.lsm3 {
+    letter-spacing: -3px;
+}
+.lsm4 {
+    letter-spacing: -4px;
+}
+.lsm5 {
+    letter-spacing: -5px;
+}
+
+.ws1 {
+word-spacing: 1px;
+}
+.ws2 {
+    word-spacing: 2px;
+}
+.ws3 {
+    word-spacing: 3px;
+}
+.ws4 {
+    word-spacing: 4px;
+}
+.ws5 {
+    word-spacing: 5px;
+}
+
+.wsm1 {
+    word-spacing: -1px;
+}
+.wsm2 {
+    word-spacing: -2px;
+}
+.wsm3 {
+    word-spacing: -3px;
+}
+.wsm4 {
+    word-spacing: -4px;
+}
+.wsm5 {
+    word-spacing: -5px;
+}
+
+.tal {
     text-align: left;
 }
 
-.tar{
+.tar {
     text-align: right;
 }
 
-.tac{
-    text-align:center;
+.tac {
+    text-align: center;
 }

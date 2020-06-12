@@ -8,7 +8,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header flex align-items-center p-1 flex-row justify-content-space-between">
+        <header class="header flex align-items-center p-t-5 p-b-5 p-l-10 p-r-10 flex-row justify-content-space-between">
             <div class="flex row align-items-center">
                 <div class="logo">
                     <div class="sq1">
@@ -20,7 +20,7 @@
                     <div class="sq4">
                     </div>
                 </div>
-                <h4 class="p-l-1 align-self-center scolor m-0 fw400">AMTE WEB</h4>
+                <h4 class="p-l-10 align-self-center scolor m-0 fw400">AMTE WEB</h4>
             </div>
             <div class="menumob">
                 <div class="menuline">
@@ -33,12 +33,12 @@
         </header>
         <main class="p-0 m-0">
             <div class="fpage flex flex-column align-items-center">
-                <h1 class="m-0 p-t-2">Creative Solutions</h1>
-                <h4 class="m-0 p-t-2 fw300 tac">A wide spectrum of solutions<br>for your tasks and ideas.</h2>
-                <img class="m-t-2 p-b-2" src="{{URL::asset('img/homecentercolored.png')}}">
+                <h1 class="m-0 p-t-30 fw600 lsm2 ws1">Creative Solutions</h1>
+                <h6 class="m-0 p-t-20 fw300 tac">A wide spectrum of solutions<br>for your tasks and ideas.</h6>
+                <img class="m-t-20 p-b-20" src="{{URL::asset('img/homecentercolored.png')}}">
               
             </div>
- <p class="p-t-1 tac m-0" style="font-size:1rem;"> <q><i>Our success is measured by our achievments</i></q></p>
+ <p class="p-t-10 tac m-0" style="font-size:1rem;"> <q><i>Our success is measured by our achievments</i></q></p>
 
         </main>
 
