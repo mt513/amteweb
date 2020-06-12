@@ -1,0 +1,213 @@
+$max: 5;
+$offset: 1;
+$unit: "rem";
+@mixin looper($className, $styleName) {
+    $i: 0;
+    @while $i<=$max {
+        #{$className + $i} {
+            #{$styleName}: #{$i + $unit};
+        }
+        $i: $i + $offset;
+    }
+}
+
+@mixin fw($classname, $styleName) {
+    @for $i from 1 to 10 {
+        #{$classname + $i*100} {
+            #{$styleName}: #{$i * 100};
+        }
+    }
+}
+
+//PADDING
+@include fw(".fw", "font-weight");
+@include looper(".p-l-", "padding-left");
+@include looper(".p-r-", "padding-right");
+@include looper(".p-t-", "padding-top");
+@include looper(".p-b-", "padding-bottom");
+@include looper(".p-", "padding");
+//MARGIN
+@include looper(".m-l-", "margin-left");
+@include looper(".m-r-", "margin-right");
+@include looper(".m-t-", "margin-top");
+@include looper(".m-b-", "margin-bottom");
+@include looper(".m-", "margin");
+//--END-- CREATING PADDING AND MARGIN
+
+//BASIC COLORS
+$primaryColor: #353434;
+$secondaryColor: #f2f2f2;
+$actionColor: #e49162;
+
+.pcolor {
+    color: $primaryColor;
+}
+.scolor {
+    color: $secondaryColor;
+}
+.acolor {
+    color: $actionColor;
+}
+
+//--END--BASIC COLORS
+
+//BASIC ALIGNMENT
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+//--END-- BASIC ALIGNMENT
+//--END--- LOGO
+
+@keyframes animatelogo {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    60% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.align-items-start {
+    align-items: start;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-stretch {
+    justify-content: stretch;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+.align-content-start {
+    align-content: start;
+}
+
+.align-content-end {
+    align-content: end;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+
+.align-content-space-around {
+    align-content: space-around;
+}
+
+.align-content-space-between {
+    align-content: space-between;
+}
+
+.align-content-space-evenly {
+    align-content: space-evenly;
+}
+
+.align-self-start {
+    align-self: start;
+}
+
+.align-self-end {
+    align-self: end;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-self-stretch {
+    align-self: stretch;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.8rem;
+}
+
+.tal{
+    text-align: left;
+}
+
+.tar{
+    text-align: right;
+}
+
+.tac{
+    text-align:center;
+}
