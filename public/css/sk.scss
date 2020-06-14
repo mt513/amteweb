@@ -425,6 +425,7 @@ body {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
+            cursor: pointer;
 
             [class*="sq"] {
                 box-sizing: content-box;
@@ -458,11 +459,13 @@ body {
                 padding-top: 0.12rem;
                 padding-left: 0.12rem;
             }
+
         }
         .menumob {
             display: flex;
             flex-direction: column;
             justify-items: space-between;
+            cursor: pointer;
 
             .menuline {
                 background-color: $secondaryColor;

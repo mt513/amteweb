@@ -1019,6 +1019,7 @@ body .header .logo {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+  cursor: pointer;
 }
 
 body .header .logo [class*="sq"] {
@@ -1066,6 +1067,7 @@ body .header .menumob {
       -ms-flex-direction: column;
           flex-direction: column;
   justify-items: space-between;
+  cursor: pointer;
 }
 
 body .header .menumob .menuline {

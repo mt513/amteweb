@@ -20,7 +20,7 @@
                     <div class="sq4">
                     </div>
                 </div>
-                <h4 class="p-l-10 align-self-center scolor m-0 fw400 lsm1">AMTE WEB</h4>
+                <h4 class="p-l-10 align-self-center scolor m-0 fw400 lsm1"><a href="#">AMTE WEB</a></h4>
             </div>
             <div class="menumob">
                 <div class="menuline">
