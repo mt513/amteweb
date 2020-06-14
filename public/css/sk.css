@@ -1072,8 +1072,8 @@ body .header .menumob {
 
 body .header .menumob .menuline {
   background-color: #f2f2f2;
-  width: 1.6rem;
-  height: 0.1rem;
+  width: 1.5625rem;
+  height: 0.125rem;
   margin: 0.25rem 0rem;
 }
 
@@ -1086,44 +1086,17 @@ body main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 body main .fpagewr {
-  min-height: calc(100% - 3.2rem);
+  height: 100%;
   margin-top: 3.2rem;
   width: 100%;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  overflow: hidden;
 }
 
 body main .fpagewr .fpage {
   width: 100%;
-  min-height: 100%;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-body main .fpagewr .fpage .upper {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  height: 100%;
   background-color: #f2f2f2;
   background: -webkit-gradient(linear, left top, right top, from(#f2f2f2), color-stop(100%, rgba(232, 232, 220, 0.35)), to(rgba(242, 242, 242, 0)));
   background: linear-gradient(90deg, #f2f2f2 0%, rgba(232, 232, 220, 0.35) 100%, rgba(242, 242, 242, 0));
@@ -1131,10 +1104,7 @@ body main .fpagewr .fpage .upper {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
 }
 
-body main .fpagewr .fpage .upper .mainimg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body main .fpagewr .fpage .mainimg {
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -1145,17 +1115,19 @@ body main .fpagewr .fpage .upper .mainimg {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-body main .fpagewr .fpage .upper .mainimg img {
-  margin: auto;
+body main .fpagewr .fpage .mainimg img {
+  position: absolute;
   max-height: 100%;
   max-width: 100%;
-  position: absolute;
-  top: 0;
   left: 0;
   right: 0;
+  top: 0;
   bottom: 0;
-  padding: 1rem;
+  margin: auto;
 }
 /*# sourceMappingURL=sk.css.map */
