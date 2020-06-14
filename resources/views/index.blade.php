@@ -20,7 +20,7 @@
                     <div class="sq4">
                     </div>
                 </div>
-                <h4 class="p-l-10 align-self-center scolor m-0 fw400">AMTE WEB</h4>
+                <h4 class="p-l-10 align-self-center scolor m-0 fw400 lsm1">AMTE WEB</h4>
             </div>
             <div class="menumob">
                 <div class="menuline">
@@ -31,15 +31,24 @@
                 </div>
             </div>
         </header>
-        <main class="p-0 m-0">
-            <div class="fpage flex flex-column align-items-center">
-                <h1 class="m-0 p-t-30 fw600 lsm2 ws1">Creative Solutions</h1>
-                <h6 class="m-0 p-t-20 fw300 tac">A wide spectrum of solutions<br>for your tasks and ideas.</h6>
-                <img class="m-t-20 p-b-20" src="{{URL::asset('img/homecentercolored.png')}}">
-              
-            </div>
- <p class="p-t-10 tac m-0 fw400" style="font-size:0.8rem;"> <q><i>Our success is measured by our achievments</i></q></p>
-
+        <main class="p-0 m-l-0 m-r-0 m-b-0">
+            <div class="fpagewr">
+            <section class="fpage ">
+                <div class="upper flex flex-column align-items-center justify-content-center">
+                    <div>
+                    <h1 class="m-0 p-t-30 fw600 tac lsm2 ws1">Creative Solutions</h1>
+                    <h6 class="m-0 p-t-20 fw300 tac">A wide spectrum of solutions<br>for your tasks and ideas.</h6>
+                    </div>
+                    <div class="mainimg">
+                        <img src="{{URL::asset('/img/homecentercolored.png')}}">
+                    </div>
+                </div>   
+              <div class="add p-10">
+                <p class="tac m-0 fw400" style="font-size:0.8rem;"> <q><i>Our success is measured by our achievments</i></q></p>
+              </div>
+            </section>
+        </div>
+            <p style="background:red; ">content here,,,</p>
         </main>
 
     </div>
