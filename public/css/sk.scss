@@ -476,18 +476,17 @@ body {
 
     main {
         height: 100%;
-        display: flex;
-        flex-direction: column;
+     
         // flex:1;
 
         .fpagewr {
             height: 100%;
-            margin-top: 3.2rem;
             width: 100%;
 
             .fpage {
                 width: 100%;
                 height: 100%;
+                padding-top: 3.2rem;
                 background-color: $secondaryColor;
                 background: linear-gradient(
                     90deg,
