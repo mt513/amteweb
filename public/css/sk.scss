@@ -478,7 +478,7 @@ body {
         height: 100%;
      
         // flex:1;
-
+       
         .fpagewr {
             height: 100%;
             width: 100%;
@@ -522,5 +522,37 @@ body {
                 }
             }
         }
+        .pitems{
+            flex-wrap: wrap;
+            background-color: $primaryColor;
+            background: linear-gradient(
+                    90deg,
+                    rgba(242, 242, 242, 0),0%
+                    rgba(232, 232, 220, 0.35) 100%,
+                    rgba(242, 242, 242, 1)
+                );
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+        }
+        .bbitem{
+            flex-wrap: wrap;
+            justify-content:center;
+            display:flex;
+        
+            .sbitem{
+                color: $secondaryColor;
+                max-width:350px;
+                min-width:200px;
+                padding: 1rem;
+
+            }
+        }
     }
+}
+
+
+@media only screen and (max-height: 500px){
+    body main .fpagewr {
+        height: auto;
+        width: 100%;
+}
 }

@@ -3,7 +3,7 @@
 <head>
     <title>AMTE WEB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/sk.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/sk.css') }}">
 </head>
 
 <body>
@@ -47,11 +47,33 @@
                 <div class="add p-10">
                     <p class="tac m-0 fw400" style="font-size:0.8rem;"> <q><i>Our success is measured by our achievments</i></q></p>
                 </div>
+            </div>
+            <div class="spagewr flex flex-column">
+                <section class="pitems flex flex-row justify-content-center p-b-15">
+                    <div class="bbitem">
+                        <div class="sbitem">
+                            Vivamus mi lacus, suscipit vitae diam quis, sollicitudin lacinia tellus. Praesent finibus mauris a nisi vestibulum tincidunt. Nullam iaculis magna at velit aliquet, dictum elementum magna laoreet.
+                        </div>
+                        <div class="sbitem">
+                            Vivamus mi lacus, suscipit vitae diam quis, sollicitudin lacinia tellus. Praesent finibus mauris a nisi vestibulum tincidunt. Nullam iaculis magna at velit aliquet, dictum elementum magna laoreet.                       
+                        </div>
+                    </div>
+                    <div class="bbitem">
+                        <div class="sbitem">
+                            Vivamus mi lacus, suscipit vitae diam quis, sollicitudin lacinia tellus. Praesent finibus mauris a nisi vestibulum tincidunt. Nullam iaculis magna at velit aliquet, dictum elementum magna laoreet.
+                        </div>
+                        <div class="sbitem">
+                            Vivamus mi lacus, suscipit vitae diam quis, sollicitudin lacinia tellus. Praesent finibus mauris a nisi vestibulum tincidunt. Nullam iaculis magna at velit aliquet, dictum elementum magna laoreet.
+                        </div>
+                    </div>
+                </section>  
+                <div class="bbox flex justify-content-center">
+                    bbox
+                    </div>  
             </div>   
-            
-            <p style="background:red; ">content here,,,</p>
+            <p style="background:red; ">c122121ontent here,,,</p>
         </main>
-      
+        
         
     </div>
 </body>

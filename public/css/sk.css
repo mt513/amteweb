@@ -1123,4 +1123,39 @@ body main .fpagewr .fpage .mainimg img {
   bottom: 0;
   margin: auto;
 }
+
+body main .pitems {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #353434;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(242, 242, 242, 0)), color-stop(0%), to(#f2f2f2));
+  background: linear-gradient(90deg, rgba(242, 242, 242, 0), 0% rgba(232, 232, 220, 0.35) 100%, #f2f2f2);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+body main .bbitem {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .bbitem .sbitem {
+  color: #f2f2f2;
+  max-width: 350px;
+  min-width: 200px;
+  padding: 1rem;
+}
+
+@media only screen and (max-height: 500px) {
+  body main .fpagewr {
+    height: auto;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=sk.css.map */

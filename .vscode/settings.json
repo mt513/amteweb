@@ -1,4 +1,12 @@
 {
     "liveServer.settings.multiRootWorkspaceName": "amteweb",
-    "liveServer.settings.port": 81
+
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.fullReload": true,
+
+    "liveServer.settings.proxy": {
+        "enable": true,                             //   i. enabled
+        "baseUri": "/",                             //  ii. workspace
+        "proxyUri": "http://amteweb:8080/" // iii. actual address
+    }
 }
