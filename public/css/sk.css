@@ -985,6 +985,7 @@ h6 {
 *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: Montserrat, Verdana, sans-serif;
 }
 
 html,
@@ -1143,13 +1144,63 @@ body main .bbitem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
 }
 
 body main .bbitem .sbitem {
-  color: #f2f2f2;
-  max-width: 350px;
-  min-width: 200px;
-  padding: 1rem;
+  width: 100%;
+  color: white;
+  min-width: 250px;
+  padding: 0.80rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0rem;
+  height: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+body main .bbitem .sbitem p {
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 400;
+  word-spacing: -1px;
+}
+
+body main .bbitem .sbitem button {
+  max-width: 200px;
+  background-color: #e49162;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 0.9rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 500;
+}
+
+body main .bbitem .sbitem button:hover {
+  background-color: #d9d9d9;
+  color: #e49162;
+}
+
+body main .bbitem .sbitem span.bline {
+  border-top: 1px solid #a6a6a6;
+  margin-top: auto;
 }
 
 @media only screen and (max-height: 500px) {

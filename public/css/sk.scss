@@ -394,6 +394,7 @@
 *:before,
 *:after {
     box-sizing: border-box;
+    font-family: Montserrat, Verdana, sans-serif;
 }
 
 html,
@@ -476,9 +477,9 @@ body {
 
     main {
         height: 100%;
-     
+
         // flex:1;
-       
+
         .fpagewr {
             height: 100%;
             width: 100%;
@@ -496,7 +497,6 @@ body {
                 );
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
 
-
                 .mainimg {
                     overflow: hidden;
                     position: relative;
@@ -508,51 +508,99 @@ body {
                     flex: 1;
                     align-self: center;
 
-
                     img {
                         position: absolute;
                         max-height: 100%;
                         max-width: 100%;
-                        left:0;
-                        right:0;
-                        top:0;
-                        bottom:0;
-                        margin:auto;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
                     }
                 }
             }
         }
-        .pitems{
+        .pitems {
             flex-wrap: wrap;
             background-color: $primaryColor;
             background: linear-gradient(
-                    90deg,
-                    rgba(242, 242, 242, 0),0%
-                    rgba(232, 232, 220, 0.35) 100%,
-                    rgba(242, 242, 242, 1)
-                );
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+                90deg,
+                rgba(242, 242, 242, 0),
+                0% rgba(232, 232, 220, 0.35) 100%,
+                rgba(242, 242, 242, 1)
+            );
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
         }
-        .bbitem{
+        .bbitem {
             flex-wrap: wrap;
-            justify-content:center;
-            display:flex;
-        
-            .sbitem{
-                color: $secondaryColor;
-                max-width:350px;
-                min-width:200px;
-                padding: 1rem;
+            justify-content: center;
+            display: flex;
+            flex:1 1 0;
 
+
+            .sbitem {
+                width: 100%;
+                color: rgb(255,255,255);
+                //max-width: 370px;
+                min-width: 250px;
+                padding: 0.80rem;
+                padding-top:1.5rem;
+                padding-bottom: 0rem;
+                height: 250px;
+                flex:1 1 0;
+            
+
+                p {
+                    line-height: 1.3rem;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    font-weight:400;
+                    word-spacing: -1px;
+                }
+                button {
+                    max-width:200px;
+                    background-color: $actionColor;
+                    color: rgb(255,255,255);
+                    border: none;
+                    border-radius: 3px;;
+                    padding: 0.5rem;
+                    padding-left: 2.5rem;
+                    padding-right: 2.5rem;
+                    margin-right: auto;
+                    margin-left: auto;
+                    cursor:pointer;
+                    align-self: center;
+                    font-size:0.9rem;
+                    transition: 0.3s ease-in-out;
+                    margin-top: auto;
+                    margin-bottom:auto;
+                    font-weight: 500;
+                }
+
+                button:hover{
+                    background-color: darken($secondaryColor, 10%);
+                    color: $actionColor;
+                  
+                }
+                span.bline{
+                    border-top:1px solid darken($secondaryColor, 30%);
+                    margin-top:auto;
+                   
+                   
+                }
+                
             }
+
+
         }
+
     }
 }
 
-
-@media only screen and (max-height: 500px){
+@media only screen and (max-height: 500px) {
     body main .fpagewr {
         height: auto;
         width: 100%;
-}
+    }
 }
