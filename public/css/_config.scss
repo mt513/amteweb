@@ -87,6 +87,13 @@ $actionColor: #e49162;
     flex-direction: row;
 }
 
+.flexwrap1{
+    flex-wrap: wrap;
+}
+.flexwrap0{
+    flex-wrap: nowrap;
+}
+
 .align-items-start {
     align-items: start;
 }

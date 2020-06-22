@@ -536,6 +536,16 @@
           flex-direction: row;
 }
 
+.flexwrap1 {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flexwrap0 {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 .align-items-start {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -1135,7 +1145,7 @@ body main .pitems {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
 }
 
-body main .bbitem {
+body main .pitems .bbitem {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -1149,11 +1159,11 @@ body main .bbitem {
           flex: 1 1 0;
 }
 
-body main .bbitem .sbitem {
+body main .pitems .bbitem .sbitem {
   width: 100%;
   color: white;
   min-width: 250px;
-  padding: 0.80rem;
+  padding: 0.8rem;
   padding-top: 1.5rem;
   padding-bottom: 0rem;
   height: 250px;
@@ -1162,7 +1172,7 @@ body main .bbitem .sbitem {
           flex: 1 1 0;
 }
 
-body main .bbitem .sbitem p {
+body main .pitems .bbitem .sbitem p {
   line-height: 1.3rem;
   font-size: 0.8rem;
   text-align: center;
@@ -1170,7 +1180,7 @@ body main .bbitem .sbitem p {
   word-spacing: -1px;
 }
 
-body main .bbitem .sbitem button {
+body main .pitems .bbitem .sbitem button {
   max-width: 200px;
   background-color: #e49162;
   color: white;
@@ -1193,14 +1203,50 @@ body main .bbitem .sbitem button {
   font-weight: 500;
 }
 
-body main .bbitem .sbitem button:hover {
+body main .pitems .bbitem .sbitem button:hover {
   background-color: #d9d9d9;
   color: #e49162;
 }
 
-body main .bbitem .sbitem span.bline {
+body main .pitems .bbitem .sbitem span.bline {
   border-top: 1px solid #a6a6a6;
   margin-top: auto;
+}
+
+body main .bundle {
+  display: block;
+}
+
+body main .bundle .content {
+  position: relative;
+}
+
+body main .bundle .content .imgwrp {
+  width: 350px;
+  max-width: 350px;
+  overflow: hidden;
+  height: auto;
+}
+
+body main .bundle .content .imgwrp img {
+  max-width: 350px !important;
+}
+
+body main .bundle .content .byb {
+  position: absolute;
+  top: 0;
+}
+
+body main .bundle .content p {
+  bottom: 0;
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 400;
+  word-spacing: -1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: -3.5rem;
 }
 
 @media only screen and (max-height: 500px) {

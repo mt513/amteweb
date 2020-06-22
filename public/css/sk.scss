@@ -531,70 +531,101 @@ body {
                 rgba(242, 242, 242, 1)
             );
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
-        }
-        .bbitem {
-            flex-wrap: wrap;
-            justify-content: center;
-            display: flex;
-            flex:1 1 0;
 
+            .bbitem {
+                flex-wrap: wrap;
+                justify-content: center;
+                display: flex;
+                flex: 1 1 0;
 
-            .sbitem {
-                width: 100%;
-                color: rgb(255,255,255);
-                //max-width: 370px;
-                min-width: 250px;
-                padding: 0.80rem;
-                padding-top:1.5rem;
-                padding-bottom: 0rem;
-                height: 250px;
-                flex:1 1 0;
-            
+                .sbitem {
+                    width: 100%;
+                    color: rgb(255, 255, 255);
+                    //max-width: 370px;
+                    min-width: 250px;
+                    padding: 0.8rem;
+                    padding-top: 1.5rem;
+                    padding-bottom: 0rem;
+                    height: 250px;
+                    flex: 1 1 0;
 
-                p {
-                    line-height: 1.3rem;
-                    font-size: 0.8rem;
-                    text-align: center;
-                    font-weight:400;
-                    word-spacing: -1px;
-                }
-                button {
-                    max-width:200px;
-                    background-color: $actionColor;
-                    color: rgb(255,255,255);
-                    border: none;
-                    border-radius: 3px;;
-                    padding: 0.5rem;
-                    padding-left: 2.5rem;
-                    padding-right: 2.5rem;
-                    margin-right: auto;
-                    margin-left: auto;
-                    cursor:pointer;
-                    align-self: center;
-                    font-size:0.9rem;
-                    transition: 0.3s ease-in-out;
-                    margin-top: auto;
-                    margin-bottom:auto;
-                    font-weight: 500;
-                }
+                    p {
+                        line-height: 1.3rem;
+                        font-size: 0.8rem;
+                        text-align: center;
+                        font-weight: 400;
+                        word-spacing: -1px;
+                    }
+                    button {
+                        max-width: 200px;
+                        background-color: $actionColor;
+                        color: rgb(255, 255, 255);
+                        border: none;
+                        border-radius: 3px;
+                        padding: 0.5rem;
+                        padding-left: 2.5rem;
+                        padding-right: 2.5rem;
+                        margin-right: auto;
+                        margin-left: auto;
+                        cursor: pointer;
+                        align-self: center;
+                        font-size: 0.9rem;
+                        transition: 0.3s ease-in-out;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        font-weight: 500;
+                    }
 
-                button:hover{
-                    background-color: darken($secondaryColor, 10%);
-                    color: $actionColor;
-                  
+                    button:hover {
+                        background-color: darken($secondaryColor, 10%);
+                        color: $actionColor;
+                    }
+                    span.bline {
+                        border-top: 1px solid darken($secondaryColor, 30%);
+                        margin-top: auto;
+                    }
                 }
-                span.bline{
-                    border-top:1px solid darken($secondaryColor, 30%);
-                    margin-top:auto;
-                   
-                   
-                }
-                
             }
+        }
+        .bundle{
+            display:block;
 
+            .content 
+            {
+                position:relative;
 
+            .imgwrp 
+            {
+                width:350px;
+                max-width:350px;
+                overflow: hidden;
+                height:auto;
+
+            img{
+               // width:100%;
+                max-width:350px !important;
+            }
+           
+        }
+        .byb{
+            position: absolute;
+            top:0;
         }
 
+        p {
+
+            bottom:0;
+            line-height: 1.3rem;
+            font-size: 0.8rem;
+            text-align: center;
+            font-weight: 400;
+            word-spacing: -1px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-top:-3.5rem;
+        }
+        }
+        }
     }
 }
 

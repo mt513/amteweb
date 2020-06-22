@@ -37,7 +37,7 @@
                     <div class="flex flex-column align-items-center justify-content-center">
                         <div class="flex flex-column">
                             <h1 class="m-0 p-t-30 fw600 tac lsm2 ws1">Creative Solutions</h1>
-                            <h6 class="m-0 p-t-20 p-b-20 fw300 tac">A wide spectrum of solutions<br>for your tasks and ideas.</h6>
+                            <h6 class="m-0 p-t-20 p-b-20 fw300 tac ls1">a wide spectrum of solutions<br>for your tasks and ideas.</h6>
                         </div>
                     </div>
                     <div class="mainimg flex m-15">
@@ -53,61 +53,74 @@
                     <div class="bbitem">
                         <div class="sbitem flex flex-column justify-content-flex-star">
                             <div class="flex align-items-center justify-content-center">
-                        <img src="{{URL::asset('/img/web.png')}}" alt="Web" width="70"; height="50" class="m-l-10 m-r-10">
-                        <h4 class="m-0 fw400 p-l-5 p-r-5">Web</h4>
+                                <img src="{{URL::asset('/img/web.png')}}" alt="Web" width="70"; height="50" class="m-l-10 m-r-10">
+                                <h4 class="m-0 fw400 p-l-5 p-r-5">Web</h4>
                             </div>
                             <p>From building the cores of custom web applications to
                                 polishing out of the box details, we strive to provide
                                 combined <span class="fw500">efficiency, effectiveness and elegance.</span></p>
                                 <button>Learn More</button>
                                 <span class="bline"></span>
-                        </div>
-                        <div class="sbitem flex flex-column justify-content-flex-star">
-                            <div class="flex align-items-center justify-content-center">
-                        <img src="{{URL::asset('/img/graphics.png')}}" alt="Graphics" width="70"; height="50" class="m-l-10 m-r-10">
-                        <h4 class="m-0 fw400 p-l-5 p-r-5">Graphics</h4>
                             </div>
-                            <p>Either it is a company logo or a component for a project,
-                                we think about illustrations as shortcuts
-                                that <span class="fw500">overwrite complexity and point out the goals.</span></p>
-                                <button>Learn More</button>
-                                <span class="bline"></span>
-                        </div>
+                            <div class="sbitem flex flex-column justify-content-flex-star">
+                                <div class="flex align-items-center justify-content-center">
+                                    <img src="{{URL::asset('/img/graphics.png')}}" alt="Graphics" width="70"; height="50" class="m-l-10 m-r-10">
+                                    <h4 class="m-0 fw400 p-l-5 p-r-5">Graphics</h4>
+                                </div>
+                                <p>Either it is a company logo or a component for a project,
+                                    we think about illustrations as shortcuts
+                                    that <span class="fw500">overwrite complexity and point out the goals.</span></p>
+                                    <button>Learn More</button>
+                                    <span class="bline"></span>
+                                </div>
+                            </div>
+                            <div class="bbitem">
+                                <div class="sbitem flex flex-column justify-content-flex-start">
+                                    <div class="flex align-items-center justify-content-center">
+                                        <img src="{{URL::asset('/img/retouch.png')}}" alt="Retouch" width="70"; height="50" class="m-l-10 m-r-10">
+                                        <h4 class="m-0 fw400 p-l-5 p-r-5">Retouch</h4>
+                                    </div>
+                                    <p>Harmony between shapes, colors, and lights is essential.
+                                        Careful manipulation of these elements can reveal the
+                                        <span class="fw500">meaning of beauty in photo composition.</span></p>
+                                        <button>Learn More</button>
+                                        <span class="bline"></span>
+                                    </div>
+                                    <div class="sbitem flex flex-column justify-content-flex-star">
+                                        <div class="flex align-items-center justify-content-center">
+                                            <img src="{{URL::asset('/img/marketing.png')}}" alt="Web" width="70"; height="50" class="m-l-10 m-r-10">
+                                            <h4 class="m-0 fw400 p-l-5 p-r-5">Marketing</h4>
+                                        </div>
+                                        <p>Good content placed in the right place could engage,
+                                            but we also always focus on bringing the 
+                                            <span class="fw500">convertion of the leads at their maximum rates.</span></p>
+                                            <button>Learn More</button>
+                                            <span class="bline"></span>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="bundle">  
+                                    <div class="content flex justify-content-center justify-content-center align-items-center flex-column">
+                                        <div class="byb flex flex-column">
+                                            <h3 class="fw500 tac lsm2 ws1 m-0 p-t-10">Build Your Bundle</h3>
+                                            <h5 class="fw300 tac p-t-10 m-0 ls1">integrate features</h5>
+                                        </div>
+                                        <div class="imgwrp p-t-15">
+                                        <img src="{{URL::asset('/img/cube.png')}}" alt="Solutions Cube" width="" class="">
+                                        </div>
+                                        <p>Do you need support starting a new project,
+                                            or add some new features to your current one?
+                                            Either it is simple or a complex task,
+                                            our skills are at your service!</p>
+                                    </div> 
+                                </section class="bundle"> 
+                            </div>   
+                            <p style="background:red; ">c122121ontent here,,,</p>
+                        </main>
+                        
+                        
                     </div>
-                    <div class="bbitem">
-                         <div class="sbitem flex flex-column justify-content-flex-start">
-                            <div class="flex align-items-center justify-content-center">
-                        <img src="{{URL::asset('/img/retouch.png')}}" alt="Retouch" width="70"; height="50" class="m-l-10 m-r-10">
-                        <h4 class="m-0 fw400 p-l-5 p-r-5">Retouch</h4>
-                            </div>
-                            <p>Harmony between shapes, colors, and lights is essential.
-                                Careful manipulation of these elements can reveal the
-                                 <span class="fw500">meaning of beauty in photo composition.</span></p>
-                                <button>Learn More</button>
-                                <span class="bline"></span>
-                        </div>
-                        <div class="sbitem flex flex-column justify-content-flex-star">
-                            <div class="flex align-items-center justify-content-center">
-                        <img src="{{URL::asset('/img/marketing.png')}}" alt="Web" width="70"; height="50" class="m-l-10 m-r-10">
-                        <h4 class="m-0 fw400 p-l-5 p-r-5">Marketing</h4>
-                            </div>
-                            <p>Good content placed in the right place could engage,
-                                but we also always focus on bringing the 
-                                <span class="fw500">convertion of the leads at their maximum rates.</span></p>
-                                <button>Learn More</button>
-                                <span class="bline"></span>
-                        </div>
-                    </div>
-                </section>  
-                <div class="bbox flex justify-content-center">
-                    bbox
-                    </div>  
-            </div>   
-            <p style="background:red; ">c122121ontent here,,,</p>
-        </main>
-        
-        
-    </div>
-</body>
-
-</html>
+                </body>
+                
+                </html>
+                
