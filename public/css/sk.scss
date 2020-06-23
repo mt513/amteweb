@@ -587,44 +587,90 @@ body {
                 }
             }
         }
-        .bundle{
-            display:block;
+        .bundle {
+            display: block;
 
-            .content 
-            {
-                position:relative;
+            .content {
+                position: relative;
 
-            .imgwrp 
-            {
-                width:350px;
-                max-width:350px;
-                overflow: hidden;
-                height:auto;
+                .imgwrp {
+                    min-width: 200px;
+                    max-width: 350px;
+                    overflow: hidden;
+                    height: auto;
 
-            img{
-               // width:100%;
-                max-width:350px !important;
+                    img {
+                        // width:100%;
+
+                        max-width: 350px !important;
+                        min-width: 200px !important;
+                        width: 100%;
+                    }
+                }
+                .byb {
+                    position: absolute;
+                    top: 0;
+                }
+
+                p {
+                    bottom: 0;
+                    line-height: 1.3rem;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    font-weight: 400;
+                    word-spacing: -1px;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    margin-top: -3.5rem;
+                    font-weight: 500;
+                    color: $primaryColor;
+                }
             }
-           
         }
-        .byb{
-            position: absolute;
-            top:0;
-        }
+        .cus {
+            img {
+                height: 50px;
+                width: auto;
+                max-height: 50px;
+            }
+            #cus {
+                width:100%;
+                label {
+                   
+                    padding: 1rem;
+                }
+                .itext {
+                    input {
+                       width: 100%;
+                        min-width: 150px;
+                        max-width: 350px;
+                        height:50px;
+                        max-height: 40px;
+                        margin: 1rem;
+                    }
 
-        p {
-
-            bottom:0;
-            line-height: 1.3rem;
-            font-size: 0.8rem;
-            text-align: center;
-            font-weight: 400;
-            word-spacing: -1px;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            margin-top:-3.5rem;
-        }
-        }
+                    textarea {
+                        width: 100%;
+                        max-width: 350px;
+                        max-height: 500px;
+                        margin: 1rem;
+                        resize: vertical;
+                    }
+                }
+                button {
+                    max-width: 200px;
+                    background-color: #e49162;
+                    color: white;
+                    border: none;
+                    border-radius: 3px;
+                    padding: 0.5rem;
+                    padding-left: 2.5rem;
+                    padding-right: 2.5rem;
+                    margin-right: auto;
+                    margin-left: auto;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

@@ -93,7 +93,7 @@
                                         </div>
                                         <p>Good content placed in the right place could engage,
                                             but we also always focus on bringing the 
-                                            <span class="fw500">convertion of the leads at their maximum rates.</span></p>
+                                            <span class="fw500">convertion of the leads at its maximum rate.</span></p>
                                             <button>Learn More</button>
                                             <span class="bline"></span>
                                         </div>
@@ -106,21 +106,38 @@
                                             <h5 class="fw300 tac p-t-10 m-0 ls1">integrate features</h5>
                                         </div>
                                         <div class="imgwrp p-t-15">
-                                        <img src="{{URL::asset('/img/cube.png')}}" alt="Solutions Cube" width="" class="">
+                                            <img src="{{URL::asset('/img/cube.png')}}" alt="Solutions Cube" width="" class="">
                                         </div>
                                         <p>Do you need support starting a new project,
                                             or add some new features to your current one?
                                             Either it is simple or a complex task,
                                             our skills are at your service!</p>
-                                    </div> 
-                                </section class="bundle"> 
-                            </div>   
-                            <p style="background:red; ">c122121ontent here,,,</p>
-                        </main>
+                                        </div> 
+                                    </section class="bundle">
+                                    <section class='cus flex flex-column justify-items-center align-items-center p-t-10'>
+                                        <div class="flex flex-row justify-items-center align-items-center flexwrap0">
+                                            <img src="{{URL::asset('/img/MAIL.png')}}" alt="Send Message" class="p-l-5 p-r-5">
+                                            <h3 class="fw500 tac lsm2 ws1 p-l-5 p-r-5">Contact Us<h3>
+                                            </div>
+                                            
+                                            <form id="cus" name="cus" class="p-t-15 flex flex-column justify-content-center flexwrap1">
+                                                <div class="itext flex flexwrap1 justify-content-center">
+                                                    <input type="text" name="name" class="iname" required maxlength="32" size="32" placeholder="Name">
+                                                    <input type="email" name="email" class="iemail" required size="32" placeholder="E-mail">
+                                                </div>
+                                                <div class="itext flex flexwrap1 justify-content-center">
+                                                    <textarea id="message" name="message" rows="4" cols ="10" placeholder="Type your message"></textarea>
+                                                </div>
+                                                <button id="submit" class="fbuton" type="submit" value="Send">Send</button>   
+                                            </form>
+                                        </section> 
+                                    </div>   
+                                    <p style="background:red; ">c122121ontent here,,,</p>
+                                </main>
+                                
+                                
+                            </div>
+                        </body>
                         
+                        </html>
                         
-                    </div>
-                </body>
-                
-                </html>
-                
