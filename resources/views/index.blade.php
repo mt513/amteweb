@@ -36,7 +36,7 @@
                 <section class="fpage flex flex-column justify-content-center">
                     <div class="flex flex-column align-items-center justify-content-center">
                         <div class="flex flex-column">
-                            <h1 class="m-0 p-t-30 fw600 tac lsm2 ws1">Creative Solutions</h1>
+                            <h1 class="m-0 p-t-30 fw500 tac lsm2 ws1">Creative Solutions</h1>
                             <h6 class="m-0 p-t-20 p-b-20 fw300 tac ls1">a wide spectrum of solutions<br>for your tasks and ideas.</h6>
                         </div>
                     </div>
@@ -115,21 +115,47 @@
                                         </div> 
                                     </section class="bundle">
                                     <section class='cus flex flex-column justify-items-center align-items-center p-t-10'>
-                                        <div class="flex flex-row justify-items-center align-items-center flexwrap0">
-                                            <img src="{{URL::asset('/img/MAIL.png')}}" alt="Send Message" class="p-l-5 p-r-5">
+                                             <div class="flex flex-row justify-items-center align-items-center flexwrap0">
                                             <h3 class="fw500 tac lsm2 ws1 p-l-5 p-r-5">Contact Us<h3>
                                             </div>
-                                            
-                                            <form id="cus" name="cus" class="p-t-15 flex flex-column justify-content-center flexwrap1">
-                                                <div class="itext flex flexwrap1 justify-content-center">
-                                                    <input type="text" name="name" class="iname" required maxlength="32" size="32" placeholder="Name">
-                                                    <input type="email" name="email" class="iemail" required size="32" placeholder="E-mail">
+                                            <div class="cussubdiv flex justify-content-center flexwrap1">
+                                                
+                                               
+                                                <div class="cusinfo ">
+                                                    <p class="fw400 tac">Feel free to get in touch with us. We are always open to discussing new projects, creative ideas or opportunities to be part of your visions. </p>
+                                                    <h5 class="fw500 tac p-t-10 m-0 ls1"><u>contact@amteweb.com</u></h5>
+                                                   
+                                                    <h5 class="fw500 tac p-t-10 m-0 ls1">
+                                                        +1 222 331 4112
+                                                        <br>
+                                                        +40 757 527 656
+                                                        <br>
+                                                        +373 68 29 13 41
+                                                    </h5>
+                                                    <div class="flex justify-content-space-evenly p-15">
+                                                        <img src="{{URL::asset('/img/icons/phone.svg')}}" alt="facebook" width="8" height="8">
+                                                        <img src="{{URL::asset('/img/icons/whatsapp.svg')}}" alt="whatsapp" width="12" height="12">
+                                                        <img src="{{URL::asset('/img/icons/telegram.svg')}}" alt="telegram" width="12" height="12">
+                                                        <img src="{{URL::asset('/img/icons/viber.svg')}}" alt="viber" width="12" height="12">
+                                                        
+                                                    </div>
                                                 </div>
-                                                <div class="itext flex flexwrap1 justify-content-center">
-                                                    <textarea id="message" name="message" rows="4" cols ="10" placeholder="Type your message"></textarea>
-                                                </div>
-                                                <button id="submit" class="fbuton" type="submit" value="Send">Send</button>   
-                                            </form>
+                                                
+                                                
+                                                
+                                                <form id="cus" name="cus" class=" flex flex-column justify-content-center flexwrap1">
+                                                    <div class="itext flex flex-column flexwrap1 align-content-center justify-content-center">
+                                                        <input type="text" name="name" class="iname" required maxlength="32" size="32" placeholder="Name">
+                                                        <input type="email" name="phone" class="iphone" required size="32" placeholder="Phone">
+                                                        <input type="email" name="email" class="iemail" required size="32" placeholder="E-mail">
+                                                    </div>
+                                                    <div class="itext flex flexwrap1 justify-content-center">
+                                                        <textarea id="message" name="message" rows="4" cols ="10" placeholder="Type your message"></textarea>
+                                                    </div>
+                                                    <button id="submit" class="fbuton" type="submit" value="Send">Send</button>   
+                                                </form>
+                                                
+                                            </div>
                                         </section> 
                                     </div>   
                                     <p style="background:red; ">c122121ontent here,,,</p>

@@ -551,9 +551,9 @@ body {
 
                     p {
                         line-height: 1.3rem;
-                        font-size: 0.8rem;
+                        font-size: 0.9rem;
                         text-align: center;
-                        font-weight: 400;
+                        font-weight: 300;
                         word-spacing: -1px;
                     }
                     button {
@@ -615,31 +615,39 @@ body {
                 p {
                     bottom: 0;
                     line-height: 1.3rem;
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                     text-align: center;
-                    font-weight: 400;
                     word-spacing: -1px;
                     padding-left: 1rem;
                     padding-right: 1rem;
                     margin-top: -3.5rem;
-                    font-weight: 500;
+                    font-weight: 400;
                     color: $primaryColor;
                 }
             }
         }
         .cus {
-            img {
-                height: 50px;
-                width: auto;
-                max-height: 50px;
+            .cussubdiv{
+                width:100%;
+                .cusinfo{
+                    max-width:500px;
+
+                    img{
+                        width:30px;
+                        height: 30px;
+                        margin: 0.5rem;
+                    }
+                }
             }
             #cus {
                 width:100%;
+                max-width: 500px;
                 label {
                    
                     padding: 1rem;
                 }
                 .itext {
+                    width:100%;
                     input {
                        width: 100%;
                         min-width: 150px;
@@ -672,6 +680,8 @@ body {
                 }
             }
         }
+
+        
     }
 }
 
