@@ -1136,7 +1136,7 @@ body main .fpagewr .fpage .mainimg img {
   margin: auto;
 }
 
-body main .pitems {
+body main .pitems .pitemswr {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #353434;
@@ -1146,12 +1146,12 @@ body main .pitems {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
 }
 
-body main .pitems .byb {
+body main .pitems .pitemswr .byb {
   color: #f2f2f2;
   width: 100%;
 }
 
-body main .pitems .bbitem {
+body main .pitems .pitemswr .bbitem {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -1165,7 +1165,7 @@ body main .pitems .bbitem {
           flex: 1 1 0;
 }
 
-body main .pitems .bbitem .sbitem {
+body main .pitems .pitemswr .bbitem .sbitem {
   width: 100%;
   color: white;
   min-width: 250px;
@@ -1178,7 +1178,7 @@ body main .pitems .bbitem .sbitem {
           flex: 1 1 0;
 }
 
-body main .pitems .bbitem .sbitem p {
+body main .pitems .pitemswr .bbitem .sbitem p {
   line-height: 1.3rem;
   font-size: 0.9rem;
   text-align: center;
@@ -1186,7 +1186,7 @@ body main .pitems .bbitem .sbitem p {
   word-spacing: -1px;
 }
 
-body main .pitems .bbitem .sbitem button {
+body main .pitems .pitemswr .bbitem .sbitem button {
   max-width: 200px;
   background-color: #e49162;
   color: white;
@@ -1209,14 +1209,25 @@ body main .pitems .bbitem .sbitem button {
   font-weight: 500;
 }
 
-body main .pitems .bbitem .sbitem button:hover {
+body main .pitems .pitemswr .bbitem .sbitem button:hover {
   background-color: #d9d9d9;
   color: #e49162;
 }
 
-body main .pitems .bbitem .sbitem span.bline {
+body main .pitems .pitemswr .bbitem .sbitem span.bline {
   border-top: 1px solid #a6a6a6;
   margin-top: auto;
+}
+
+body main .pitems .pitemswr::after {
+  background: url("https://lh3.googleusercontent.com/proxy/sqgt3SM5yRmAC0bt-PPintWaimSkk1NSsaNcOaRnqjGUq04PNLWJshNXr9sToXWjI4WR2RjzrQhMVNnwLSZRYy74RdIc7TRVMg_JzmOwt6giPU3QCFBY");
+  content: "";
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 body main .bundle {
@@ -1224,7 +1235,10 @@ body main .bundle {
 }
 
 body main .bundle .content {
+  background-color: #f2f2f2;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
 }
 
 body main .bundle .content .imgwrp {
@@ -1259,6 +1273,10 @@ body main .bundle .content p {
   margin: 0px;
   font-weight: 400;
   color: #353434;
+}
+
+body main .cus {
+  background-color: #f2f2f2;
 }
 
 body main .cus .cussubdiv {
