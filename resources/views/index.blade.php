@@ -53,7 +53,7 @@
             </div>
             <div class="spagewr flex flex-column">
                 <section class="pitems flexwrap1 flex flex-row justify-content-center ">
-                   <div class="pitemswr flex flex-row justify-content-center p-b-30">
+                   <div class="pitemswr flex flex-row justify-content-center p-b-30 bstyle">
                     <div class="byb flex flex-column aign-self-center">
                         <h3 class="fw500 tac lsm2 ws1 m-0 p-t-20">Main Services</h3>
                         <h5 class="fw300 tac p-t-10 p-b-5 m-0 ls1">skills at your dispoasal</h5>
@@ -126,7 +126,7 @@
                  </div>
                 </section>
                 <section class="bundle">
-                    <div class="content flex justify-content-center justify-content-center align-items-center flex-column p-b-20">
+                    <div class="content flex justify-content-center justify-content-center align-items-center flex-column p-b-20 bstyle">
                         <div class="byb flex flex-column">
                             <h3 class="fw500 tac lsm2 ws1 m-0 p-t-20">Build Your Bundle</h3>
                             <h5 class="fw300 tac p-t-10  p-b-15 m-0 ls1">integrate features</h5>

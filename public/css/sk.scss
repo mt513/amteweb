@@ -448,6 +448,13 @@ body {
                 height: 0.125rem;
                 margin: 0.25rem 0rem;
             }
+            .menuline:nth-child(2) {
+                width: 0.6rem !important;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                align-self: center;
+            }
         }
     }
 
@@ -501,7 +508,15 @@ body {
                 content:"";
                 position:absolute;
                 background-color: $secondaryColor;
-                background: linear-gradient(90deg,rgba(242,242,242,.95), rgba(242,242,242,.95)), url("/img/plain/8.jpg");
+                background: linear-gradient(90deg,rgba(242,242,242,.70)
+                ,rgba(242,242,242,.80),
+                 rgba(242,242,242,.90),
+                 rgba(242,242,242,.99),
+                 rgba(242,242,242,.90),
+                 rgba(242,242,242,.80),
+                 rgba(242,242,242,.70)
+                 ), 
+                 url("/img/plain/8881.jpg");
                 background-size: cover;
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
                
@@ -509,9 +524,7 @@ body {
             }
 
             .bstyle{
-            
                 background-color:$actionColor;
-               
             }
 
             .bstyle::after {	
@@ -529,14 +542,17 @@ body {
             .pitemswr {
                 flex-wrap: wrap;
                 background-color: $primaryColor;
-                background: linear-gradient(90deg,
-                        rgba(242, 242, 242, 0),
-                        0% rgba(232, 232, 220, 0.35) 100%,
-                        rgba(242, 242, 242, 1));
+                // background: linear-gradient(90deg,
+                //         rgba(242, 242, 242, 0),
+                //         0% rgba(232, 232, 220, 0.35) 100%,
+                //         rgba(242, 242, 242, 1));
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+                position:relative;
+                
                 .byb {
                     color: $secondaryColor;
                     width: 100%;
+                    position:relative;
                 }
 
                 .bbitem {
@@ -596,16 +612,29 @@ body {
                     }
                 }
             }
+            
             .pitemswr::after{
-                background:url('https://lh3.googleusercontent.com/proxy/sqgt3SM5yRmAC0bt-PPintWaimSkk1NSsaNcOaRnqjGUq04PNLWJshNXr9sToXWjI4WR2RjzrQhMVNnwLSZRYy74RdIc7TRVMg_JzmOwt6giPU3QCFBY');
-                content: "";
+                content:"";
+                position:absolute;
+                background-color: $primaryColor;
+                //background: linear-gradient(90deg,rgba(242,242,242,.95), rgba(242,242,242,.95)), url("/img/plain/8.jpg");
                 background-size: cover;
-                top:0;
-                bottom:0;
-                left:0;
-                right:0;
-                z-index: 1;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+               
+                //z-index: 21;
             }
+
+            .bstyle{
+                background-color:$actionColor;
+            }
+
+            .bstyle::after {	
+                top: 1px;
+                left: 0px;
+                right: 0px;
+                bottom: 1px;
+                z-index: -1;
+              }
         }
 
         .bundle {
@@ -617,6 +646,7 @@ body {
                 background-color: $secondaryColor;
                 position: relative;
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+                position:relative;
 
 
                 .imgwrp {
@@ -660,10 +690,33 @@ body {
                     color: $primaryColor;
                 }
             }
+
+            .content::after{
+                content:"";
+                background-color: $secondaryColor;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+                position:absolute;
+
+            }
+
+            .bstyle{
+                background-color:$actionColor;
+            }
+
+            .bstyle::after {	
+                top: 1px;
+                left: 0px;
+                right: 0px;
+                bottom: 1px;
+                z-index: -1;
+              }
         }
 
         .cus {
             background-color: $secondaryColor;
+            border-top:1px solid $actionColor;
+            border-bottom: 1px solid $actionColor;
+            padding-bottom: 15px;
             .cussubdiv {
                 width: 100%;
 

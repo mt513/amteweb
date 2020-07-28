@@ -1089,6 +1089,16 @@ body .header .menumob .menuline {
   margin: 0.25rem 0rem;
 }
 
+body .header .menumob .menuline:nth-child(2) {
+  width: 0.6rem !important;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 body main {
   height: 100%;
 }
@@ -1139,8 +1149,8 @@ body main .fpagewr .fpage::after {
   content: "";
   position: absolute;
   background-color: #f2f2f2;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(242, 242, 242, 0.95)), to(rgba(242, 242, 242, 0.95))), url("/img/plain/8.jpg");
-  background: linear-gradient(90deg, rgba(242, 242, 242, 0.95), rgba(242, 242, 242, 0.95)), url("/img/plain/8.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(242, 242, 242, 0.7)), color-stop(rgba(242, 242, 242, 0.8)), color-stop(rgba(242, 242, 242, 0.9)), color-stop(rgba(242, 242, 242, 0.99)), color-stop(rgba(242, 242, 242, 0.9)), color-stop(rgba(242, 242, 242, 0.8)), to(rgba(242, 242, 242, 0.7))), url("/img/plain/8881.jpg");
+  background: linear-gradient(90deg, rgba(242, 242, 242, 0.7), rgba(242, 242, 242, 0.8), rgba(242, 242, 242, 0.9), rgba(242, 242, 242, 0.99), rgba(242, 242, 242, 0.9), rgba(242, 242, 242, 0.8), rgba(242, 242, 242, 0.7)), url("/img/plain/8881.jpg");
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
@@ -1162,15 +1172,15 @@ body main .pitems .pitemswr {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #353434;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(242, 242, 242, 0)), color-stop(0%), to(#f2f2f2));
-  background: linear-gradient(90deg, rgba(242, 242, 242, 0), 0% rgba(232, 232, 220, 0.35) 100%, #f2f2f2);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+  position: relative;
 }
 
 body main .pitems .pitemswr .byb {
   color: #f2f2f2;
   width: 100%;
+  position: relative;
 }
 
 body main .pitems .pitemswr .bbitem {
@@ -1242,14 +1252,24 @@ body main .pitems .pitemswr .bbitem .sbitem span.bline {
 }
 
 body main .pitems .pitemswr::after {
-  background: url("https://lh3.googleusercontent.com/proxy/sqgt3SM5yRmAC0bt-PPintWaimSkk1NSsaNcOaRnqjGUq04PNLWJshNXr9sToXWjI4WR2RjzrQhMVNnwLSZRYy74RdIc7TRVMg_JzmOwt6giPU3QCFBY");
   content: "";
+  position: absolute;
+  background-color: #353434;
   background-size: cover;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+body main .pitems .bstyle {
+  background-color: #e49162;
+}
+
+body main .pitems .bstyle::after {
+  top: 1px;
+  left: 0px;
+  right: 0px;
+  bottom: 1px;
+  z-index: -1;
 }
 
 body main .bundle {
@@ -1261,6 +1281,7 @@ body main .bundle .content {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+  position: relative;
 }
 
 body main .bundle .content .imgwrp {
@@ -1297,8 +1318,31 @@ body main .bundle .content p {
   color: #353434;
 }
 
+body main .bundle .content::after {
+  content: "";
+  background-color: #f2f2f2;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+  position: absolute;
+}
+
+body main .bundle .bstyle {
+  background-color: #e49162;
+}
+
+body main .bundle .bstyle::after {
+  top: 1px;
+  left: 0px;
+  right: 0px;
+  bottom: 1px;
+  z-index: -1;
+}
+
 body main .cus {
   background-color: #f2f2f2;
+  border-top: 1px solid #e49162;
+  border-bottom: 1px solid #e49162;
+  padding-bottom: 15px;
 }
 
 body main .cus .cussubdiv {
