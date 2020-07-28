@@ -33,7 +33,7 @@
         </header>
         <main class="p-0 m-l-0 m-r-0 m-b-0">
             <div class="fpagewr flex flex-column">
-                <section class="fpage flex flex-column justify-content-center">
+                <section class="fpage flex flex-column justify-content-center bstyle">
                     <div class="flex flex-column align-items-center justify-content-center">
                         <div class="flex flex-column">
                             <h1 class="m-0 p-t-30 fw500 tac lsm2 ws1">Creative Solutions</h1>

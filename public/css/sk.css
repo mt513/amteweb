@@ -1103,10 +1103,9 @@ body main .fpagewr .fpage {
   height: 100%;
   padding-top: 3.2rem;
   background-color: #f2f2f2;
-  background: -webkit-gradient(linear, left top, right top, from(#f2f2f2), color-stop(100%, rgba(232, 232, 220, 0.35)), to(rgba(242, 242, 242, 0)));
-  background: linear-gradient(90deg, #f2f2f2 0%, rgba(232, 232, 220, 0.35) 100%, rgba(242, 242, 242, 0));
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+  position: relative;
 }
 
 body main .fpagewr .fpage .mainimg {
@@ -1134,6 +1133,29 @@ body main .fpagewr .fpage .mainimg img {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+
+body main .fpagewr .fpage::after {
+  content: "";
+  position: absolute;
+  background-color: #f2f2f2;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(242, 242, 242, 0.95)), to(rgba(242, 242, 242, 0.95))), url("/img/plain/8.jpg");
+  background: linear-gradient(90deg, rgba(242, 242, 242, 0.95), rgba(242, 242, 242, 0.95)), url("/img/plain/8.jpg");
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+body main .fpagewr .bstyle {
+  background-color: #e49162;
+}
+
+body main .fpagewr .bstyle::after {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 1px;
+  z-index: -1;
 }
 
 body main .pitems .pitemswr {
