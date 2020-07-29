@@ -589,7 +589,7 @@ body {
                         padding: 0.8rem;
                         padding-top: 1.5rem;
                         padding-bottom: 0rem;
-                        height: 250px;
+                       // height: 250px;
                         flex: 1 1 0;
 
                         p {
@@ -616,7 +616,7 @@ body {
                             font-size: 0.9rem;
                             transition: 0.3s ease-in-out;
                             margin-top: auto;
-                            margin-bottom: auto;
+                           // margin-bottom: auto;
                             font-weight: 500;
                         }
 
@@ -627,7 +627,7 @@ body {
 
                         span.bline {
                             border-top: 1px solid darken($secondaryColor, 30%);
-                            margin-top: auto;
+                            margin-top: 10px;
                         }
                     }
                 }

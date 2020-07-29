@@ -3,12 +3,13 @@ var arrodn = document.getElementById('arrowdn');
 var body = document.getElementsByTagName('body');
 var header = document.getElementById('header');
 
-
+////////////////////////////////////////////////////////////////////////
+// SMOOTH SCROLL //
+////////////////////////////////////////////////////////////////////////
 arrodn.addEventListener("click",  function(){
    // pitems.scrollIntoView({ behavior: 'smooth', block:"start", inline:"end" }
   // window.scrollBy({ top: -100, behavior: 'smooth' });
    // );
-
    smoothScroll(pitems);
 });
 
@@ -56,4 +57,28 @@ function smoothScroll(eID){
         leapY -= step; 
         if (leapY < stopY) leapY = stopY; timer++;
     }
+}
+
+////////////////////////////////////////////////////////////////////////
+// ITEMS RE-HEIGHT //
+////////////////////////////////////////////////////////////////////////
+
+window.addEventListener("resize",setsbitems);
+
+var restimer;
+var sbitems = document.querySelectorAll('.sbitem');
+function setsbitems(){
+
+    clearTimeout(restimer);
+    restimer=setTimeout(function(){
+        var max=0; 
+        for (let i=0; i<sbitems.length; i++){
+            sbitems[i].removeAttribute("style");
+            if (sbitems[i].offsetHeight > max) max = sbitems[i].offsetHeight;
+        }
+        for (let i=0; i<sbitems.length; i++){
+            sbitems[i].style.height=max+"px";
+            console.log(max);
+        }
+    },150)
 }

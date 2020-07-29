@@ -1291,7 +1291,6 @@ body main .pitems .pitemswr .bbitem .sbitem {
   padding: 0.8rem;
   padding-top: 1.5rem;
   padding-bottom: 0rem;
-  height: 250px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
@@ -1324,7 +1323,6 @@ body main .pitems .pitemswr .bbitem .sbitem button {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   margin-top: auto;
-  margin-bottom: auto;
   font-weight: 500;
 }
 
@@ -1335,7 +1333,7 @@ body main .pitems .pitemswr .bbitem .sbitem button:hover {
 
 body main .pitems .pitemswr .bbitem .sbitem span.bline {
   border-top: 1px solid #a6a6a6;
-  margin-top: auto;
+  margin-top: 10px;
 }
 
 body main .pitems .pitemswr::after {
