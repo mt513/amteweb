@@ -1088,7 +1088,6 @@ body {
   margin: 0;
   font-family: Montserrat, Verdana, sans-serif;
   color: #353434;
-  scroll-behavior: smooth;
 }
 
 body .wrapper {
@@ -1103,7 +1102,7 @@ body .header {
   max-height: 3.2rem;
   position: fixed;
   z-index: 1;
-  border-bottom: 1px solid #e49162;
+  border-bottom: 1px solid #a6a6a6;
 }
 
 body .header .logo {
@@ -1253,6 +1252,7 @@ body main .fpagewr .bstyle::after {
 
 body main .pitems {
   scroll-margin-top: 3.1rem;
+  scroll-margin: 3.1rem;
 }
 
 body main .pitems .pitemswr {

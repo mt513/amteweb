@@ -394,7 +394,7 @@ body {
     margin: 0;
     font-family: Montserrat, Verdana, sans-serif;
     color: $primaryColor;
-    scroll-behavior: smooth;
+    //scroll-behavior: smooth;
 }
 
 body {
@@ -410,7 +410,7 @@ body {
         max-height: 3.2rem;
         position: fixed;
         z-index: 1;
-        border-bottom: 1px solid $actionColor;
+        border-bottom: 1px solid darken($secondaryColor, 30%);
 
         .logo {
             // width: 0.8rem;
@@ -557,6 +557,7 @@ body {
 
         .pitems {
            scroll-margin-top:3.1rem;
+           scroll-margin: 3.1rem;
 
             .pitemswr {
                 flex-wrap: wrap;
