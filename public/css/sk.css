@@ -516,6 +516,68 @@
   }
 }
 
+@-webkit-keyframes clickme {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  3% {
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  6% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  9% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  12% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  15% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@keyframes clickme {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  3% {
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  6% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  9% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  12% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  15% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -998,6 +1060,25 @@ h6 {
   font-family: Montserrat, Verdana, sans-serif;
 }
 
+.arrow {
+  border: solid #353434;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 0px;
+  width: 0.9rem;
+  height: 0.9rem;
+  cursor: pointer;
+  -webkit-animation-name: clickme;
+          animation-name: clickme;
+  -webkit-animation: clickme 5s linear infinite;
+          animation: clickme 5s linear infinite;
+}
+
+.down {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 html,
 body {
   -webkit-box-sizing: border-box;
@@ -1007,6 +1088,7 @@ body {
   margin: 0;
   font-family: Montserrat, Verdana, sans-serif;
   color: #353434;
+  scroll-behavior: smooth;
 }
 
 body .wrapper {
@@ -1021,6 +1103,7 @@ body .header {
   max-height: 3.2rem;
   position: fixed;
   z-index: 1;
+  border-bottom: 1px solid #e49162;
 }
 
 body .header .logo {
@@ -1168,6 +1251,10 @@ body main .fpagewr .bstyle::after {
   z-index: -1;
 }
 
+body main .pitems {
+  scroll-margin-top: 3.1rem;
+}
+
 body main .pitems .pitemswr {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1255,7 +1342,10 @@ body main .pitems .pitemswr::after {
   content: "";
   position: absolute;
   background-color: #353434;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(53, 52, 52, 0.99)), color-stop(rgba(53, 52, 52, 0.95)), color-stop(rgba(53, 52, 52, 0.99)), color-stop(rgba(53, 52, 52, 0.99)), color-stop(rgba(53, 52, 52, 0.99)), color-stop(rgba(53, 52, 52, 0.95)), to(rgba(53, 52, 52, 0.99))), url();
+  background: linear-gradient(90deg, rgba(53, 52, 52, 0.99), rgba(53, 52, 52, 0.95), rgba(53, 52, 52, 0.99), rgba(53, 52, 52, 0.99), rgba(53, 52, 52, 0.99), rgba(53, 52, 52, 0.95), rgba(53, 52, 52, 0.99)), url();
   background-size: cover;
+  background-repeat: no-repeat;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
 }
@@ -1321,6 +1411,9 @@ body main .bundle .content p {
 body main .bundle .content::after {
   content: "";
   background-color: #f2f2f2;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(242, 242, 242, 0.8)), color-stop(rgba(242, 242, 242, 0.95)), color-stop(rgba(242, 242, 242, 0.99)), color-stop(rgba(242, 242, 242, 0.95)), color-stop(rgba(242, 242, 242, 0.85)), color-stop(rgba(242, 242, 242, 0.95)), to(rgba(242, 242, 242, 0.99))), url("/img/plain/887.jpg");
+  background: linear-gradient(90deg, rgba(242, 242, 242, 0.8), rgba(242, 242, 242, 0.95), rgba(242, 242, 242, 0.99), rgba(242, 242, 242, 0.95), rgba(242, 242, 242, 0.85), rgba(242, 242, 242, 0.95), rgba(242, 242, 242, 0.99)), url("/img/plain/887.jpg");
+  background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
   position: absolute;
@@ -1340,6 +1433,11 @@ body main .bundle .bstyle::after {
 
 body main .cus {
   background-color: #f2f2f2;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(242, 242, 242, 0.85)), color-stop(rgba(242, 242, 242, 0.99)), color-stop(rgba(242, 242, 242, 0.99)), color-stop(#f2f2f2), color-stop(rgba(242, 242, 242, 0.95)), color-stop(rgba(242, 242, 242, 0.95)), to(rgba(242, 242, 242, 0.8))), url("/img/plain/884.jpg");
+  background: linear-gradient(90deg, rgba(242, 242, 242, 0.85), rgba(242, 242, 242, 0.99), rgba(242, 242, 242, 0.99), #f2f2f2, rgba(242, 242, 242, 0.95), rgba(242, 242, 242, 0.95), rgba(242, 242, 242, 0.8)), url("/img/plain/884.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
   border-top: 1px solid #e49162;
   border-bottom: 1px solid #e49162;
   padding-bottom: 15px;

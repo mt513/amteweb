@@ -77,6 +77,35 @@ $actionColor: #e49162;
     }
 }
 
+@keyframes clickme {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    3%{
+        transform:rotate(70deg);        
+    }
+
+    6%{
+        transform:rotate(20deg);
+    }
+    9% {
+        transform: rotate(60deg);
+    }
+
+    12% {
+        transform: rotate(30deg);
+    }
+
+    15% {
+        transform: rotate(45deg);
+    }
+
+    100%{
+        transform:rotate(45deg);
+    }
+}
+
 .flex {
     display: flex;
 }

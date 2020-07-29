@@ -49,10 +49,11 @@
                 <div class="add p-10">
                     <p class="tac m-0 fw400" style="font-size:0.8rem;"> <q><i>Our success is measured by our
                                 achievments</i></q></p>
+                                <span id="arrowdn" class="tac flex justify-content-center p-t-10"><i class="arrow down"></i></span>
                 </div>
             </div>
             <div class="spagewr flex flex-column">
-                <section class="pitems flexwrap1 flex flex-row justify-content-center ">
+                <section id= "pitems" class="pitems flexwrap1 flex flex-row justify-content-center">
                    <div class="pitemswr flex flex-row justify-content-center p-b-30 bstyle">
                     <div class="byb flex flex-column aign-self-center">
                         <h3 class="fw500 tac lsm2 ws1 m-0 p-t-20">Main Services</h3>
@@ -205,6 +206,7 @@
             <p style="background:red; ">c122121ontent here,,,</p>
         </main>
     </div>
+<script lang="text/javascript" src="{{URL::asset('/js/eff.js')}}"></script>
 </body>
 
 </html>

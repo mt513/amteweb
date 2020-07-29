@@ -369,6 +369,23 @@
     font-family: Montserrat, Verdana, sans-serif;
 }
 
+.arrow{
+    border:solid $primaryColor;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding:0px;
+    width: 0.9rem;
+    height: 0.9rem;
+    cursor: pointer;
+    animation-name: clickme;
+    animation: clickme 5s linear infinite;
+    //animation-timing-function: ease-in-out;
+}
+.down{
+    transform: rotate(45deg);
+}
+
+
 html,
 body {
     box-sizing: border-box;
@@ -377,6 +394,7 @@ body {
     margin: 0;
     font-family: Montserrat, Verdana, sans-serif;
     color: $primaryColor;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -392,6 +410,7 @@ body {
         max-height: 3.2rem;
         position: fixed;
         z-index: 1;
+        border-bottom: 1px solid $actionColor;
 
         .logo {
             // width: 0.8rem;
@@ -537,7 +556,7 @@ body {
         }
 
         .pitems {
-           
+           scroll-margin-top:3.1rem;
 
             .pitemswr {
                 flex-wrap: wrap;
@@ -617,8 +636,18 @@ body {
                 content:"";
                 position:absolute;
                 background-color: $primaryColor;
-                //background: linear-gradient(90deg,rgba(242,242,242,.95), rgba(242,242,242,.95)), url("/img/plain/8.jpg");
+                
+                background: linear-gradient(90deg,rgba($primaryColor,.99)
+                ,rgba($primaryColor,.95),
+                 rgba($primaryColor,.99),
+                 rgba($primaryColor,.99),
+                 rgba($primaryColor,.99),
+                 rgba($primaryColor,.95),
+                 rgba($primaryColor,.99)
+                 ), 
+                 url();//"/img/plain/86.jpg"
                 background-size: cover;
+                background-repeat: no-repeat;
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
                
                 //z-index: 21;
@@ -694,6 +723,18 @@ body {
             .content::after{
                 content:"";
                 background-color: $secondaryColor;
+                background: linear-gradient(90deg,rgba(242,242,242,.80)
+                ,rgba(242,242,242,.95),
+                 rgba(242,242,242,.99),
+                 rgba(242,242,242,.95),
+                 rgba(242,242,242,.85),
+                 rgba(242,242,242,.95),
+                 rgba(242,242,242,.99)
+                 ), 
+                 url("/img/plain/887.jpg");
+                background-size: cover;
+              //  background-attachment: fixed;
+                
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
                 position:absolute;
 
@@ -714,6 +755,19 @@ body {
 
         .cus {
             background-color: $secondaryColor;
+            background: linear-gradient(90deg,rgba(242,242,242,.85)
+            ,rgba(242,242,242,.99),
+             rgba(242,242,242,.99),
+             rgba(242,242,242,1),
+             rgba(242,242,242,.95),
+             rgba(242,242,242,.95),
+             rgba(242,242,242,.80)
+             ), 
+             url("/img/plain/884.jpg");
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+            //background-attachment: fixed;
             border-top:1px solid $actionColor;
             border-bottom: 1px solid $actionColor;
             padding-bottom: 15px;
