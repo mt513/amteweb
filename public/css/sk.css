@@ -1455,6 +1455,10 @@ body main .cus .cussubdiv .cusinfo img {
   margin: 0.5rem;
 }
 
+body main .cus .cussubdiv .cusinfo p {
+  line-height: 1.32rem;
+}
+
 body main .cus #cus {
   width: 100%;
   max-width: 500px;

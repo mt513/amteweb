@@ -159,7 +159,7 @@
                      <p class="tac m-0 fw400" style="font-size:0.8rem;"> <q><i>Coming together is a beginning, staying together is progress, and working together is success.</i></q> – Henry Ford</p>
                  </div>
                 </section>
-                <section class='cus flex flex-column justify-items-center align-items-center p-t-10'>
+                <section class='cus flex flex-column justify-items-center align-items-center'>
                     <div class="byb flex flex-column">
                         <h3 class="fw500 tac lsm2 ws1 m-0 p-t-20">Contact Us</h3>
                         <h5 class="fw300 tac p-t-10 p-b-15 m-0 ls1">let's communicate</h5>
