@@ -1305,6 +1305,7 @@ body main .pitems .pitemswr .bbitem .sbitem p {
 }
 
 body main .pitems .pitemswr .bbitem .sbitem button {
+  width: 163px;
   max-width: 200px;
   background-color: #e49162;
   color: white;
@@ -1443,20 +1444,19 @@ body main .cus {
 
 body main .cus .cussubdiv {
   width: 100%;
+  max-width: 1024px;
 }
 
 body main .cus .cussubdiv .cusinfo {
-  max-width: 500px;
-}
-
-body main .cus .cussubdiv .cusinfo img {
-  width: 30px;
-  height: 30px;
-  margin: 0.5rem;
+  margin-right: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 body main .cus .cussubdiv .cusinfo p {
   line-height: 1.32rem;
+  max-width: 500px;
 }
 
 body main .cus #cus {
@@ -1478,29 +1478,56 @@ body main .cus #cus .itext input {
   max-width: 350px;
   height: 50px;
   max-height: 40px;
-  margin: 1rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  font-size: 1rem;
 }
 
 body main .cus #cus .itext textarea {
   width: 100%;
   max-width: 350px;
   max-height: 500px;
-  margin: 1rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
   resize: vertical;
+  font-size: 1rem;
 }
 
 body main .cus #cus button {
+  width: 163px;
   max-width: 200px;
   background-color: #e49162;
   color: white;
   border: none;
   border-radius: 3px;
   padding: 0.5rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
   margin-right: auto;
   margin-left: auto;
   cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 0.9rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+body main .cus #cus button:hover {
+  background-color: #d9d9d9;
+  color: #e49162;
+}
+
+body main .cus .cusdetails {
+  margin-left: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 4px;
+}
+
+body main .cus .cusdetails img {
+  width: 30px;
+  height: 30px;
+  margin: 0.5rem;
 }
 
 @media only screen and (max-height: 500px) {

@@ -601,6 +601,7 @@ body {
                         }
 
                         button {
+                            width: 163px;
                             max-width: 200px;
                             background-color: $actionColor;
                             color: rgb(255, 255, 255);
@@ -774,18 +775,19 @@ body {
             padding-bottom: 15px;
             .cussubdiv {
                 width: 100%;
+                max-width: 1024px;
 
                 .cusinfo {
-                    max-width: 500px;
+                  //  max-width: 500px;
+                  margin-right:auto;
+                  flex:1;
+                  
 
-                    img {
-                        width: 30px;
-                        height: 30px;
-                        margin: 0.5rem;
-                    }
+                  
 
                     p {
                         line-height: 1.32rem;
+                        max-width:500px;
                     }
                 }
             }
@@ -808,30 +810,53 @@ body {
                         max-width: 350px;
                         height: 50px;
                         max-height: 40px;
-                        margin: 1rem;
+                        margin: 0.5rem 0rem 0.5rem 0rem;
+                        font-size: 1rem;
                     }
 
                     textarea {
                         width: 100%;
                         max-width: 350px;
                         max-height: 500px;
-                        margin: 1rem;
+                        margin: 0.5rem 0rem 0.5rem 0rem;
                         resize: vertical;
+                        font-size: 1rem;
                     }
                 }
 
                 button {
+                    width: 163px;
                     max-width: 200px;
-                    background-color: #e49162;
-                    color: white;
+                    background-color: $actionColor;
+                    color: rgb(255, 255, 255);
                     border: none;
                     border-radius: 3px;
                     padding: 0.5rem;
-                    padding-left: 2.5rem;
-                    padding-right: 2.5rem;
                     margin-right: auto;
                     margin-left: auto;
                     cursor: pointer;
+                    align-self: center;
+                    font-size: 0.9rem;
+                    transition: 0.3s ease-in-out;
+                   // margin-bottom: auto;
+                    font-weight: 500;
+                }
+
+                button:hover {
+                    background-color: darken($secondaryColor, 10%);
+                    color: $actionColor;
+                }
+            }
+
+            .cusdetails{
+                margin-left:auto;
+                flex:1;
+                border-radius: 4px;
+    //border: 1px solid #615f5f;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 0.5rem;
                 }
             }
         }
