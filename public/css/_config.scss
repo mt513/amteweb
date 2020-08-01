@@ -80,21 +80,27 @@ $actionColor: #e49162;
 @keyframes clickme {
     0% {
         transform: rotate(45deg);
+
     }
 
     3%{
-        transform:rotate(70deg);        
+        transform:rotate(70deg);  
+
+    
     }
 
     6%{
         transform:rotate(20deg);
+
     }
     9% {
         transform: rotate(60deg);
+
     }
 
     12% {
         transform: rotate(30deg);
+
     }
 
     15% {
@@ -103,6 +109,7 @@ $actionColor: #e49162;
 
     100%{
         transform:rotate(45deg);
+        border-color: $actionColor;
     }
 }
 
@@ -277,6 +284,26 @@ word-spacing: 1px;
 }
 .wsm5 {
     word-spacing: -5px;
+}
+
+.lh1{
+    line-height: 1;
+}
+
+.lh2{
+    line-height: 2;
+}
+
+.lh3{
+    line-height: 3;
+}
+
+.lh4{
+    line-height: 4;
+}
+
+.lh5{
+    line-height: 5;
 }
 
 .tal {

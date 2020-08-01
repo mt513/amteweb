@@ -369,6 +369,15 @@
     font-family: Montserrat, Verdana, sans-serif;
 }
 
+.primarycolor{
+    color:$primaryColor;
+}
+.secondarycolor{
+color: $secondaryColor;
+}
+.actioncolor{
+    color:$actionColor;
+}
 .arrow{
     border:solid $primaryColor;
     border-width: 0 2px 2px 0;
@@ -812,15 +821,26 @@ body {
                         max-height: 40px;
                         margin: 0.5rem 0rem 0.5rem 0rem;
                         font-size: 1rem;
+                        border-radius: 3px;
+                        border:1px solid lighten($primaryColor,30%);
+                        outline: none;
+                    }
+
+                    input:active, input:focus, textarea:active, textarea:focus{
+                        border:1px solid lighten($actionColor,1%);
                     }
 
                     textarea {
                         width: 100%;
                         max-width: 350px;
                         max-height: 500px;
+                        min-height: 50px;;
                         margin: 0.5rem 0rem 0.5rem 0rem;
                         resize: vertical;
                         font-size: 1rem;
+                        border-radius: 3px;
+                        border:1px solid lighten($primaryColor,30%);
+                        outline:none;
                     }
                 }
 
@@ -853,15 +873,72 @@ body {
                 flex:1;
                 border-radius: 4px;
     //border: 1px solid #615f5f;
-                img {
+               
+    a{
+        color:$actionColor;
+    }
+            }
+            .cusicon{
+                width: 50px;
+                height:50px;
+               // background-color: palegoldenrod;
+                display:flex;
+                border-radius: 30%;
+                transition: 0.3s ease;
+                cursor:pointer;
+                
+                svg {
+                   // cursor:pointer;
                     width: 30px;
                     height: 30px;
-                    margin: 0.5rem;
+                    fill:white;
+                    transition: 0.3s ease-in-out;
+                    padding-bottom:2px;
+                    transition: 0.3s ease;
+                }
+
+                // svg:hover{
+                //     cursor:pointer;
+                //     fill:blue;
+                //     background-color:lighten($primaryColor, 10%);
+                //     border-bottom: 1px solid rgba($primaryColor,.99);
+                // }
+            }
+
+            .cusicon:hover{
+                border-radius: 50%;
+                svg{
+                width: 33px;
+                height: 33px;
                 }
             }
+
+            .cusicon:nth-child(1){
+                background-color:$primaryColor;
+            }
+            .cusicon:nth-child(1):hover{
+                background-color:lighten($primaryColor,10%); 
+            }
+            .cusicon:nth-child(2){
+                background-color:#075e54;
+            }
+            .cusicon:nth-child(2):hover{
+                background-color:lighten(#075e54,10%);
+            }
+            .cusicon:nth-child(3){
+                background-color:#0088CC;
+            }
+            .cusicon:nth-child(3):hover{
+                background-color:lighten(#0088CC,10%);
+            }
+            .cusicon:nth-child(4){
+                background-color:#665CAC;
+            }
+            .cusicon:nth-child(4):hover{
+                background-color:lighten(#665CAC,10%);
         }
 
-
+    }
     }
 }
 

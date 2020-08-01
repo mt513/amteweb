@@ -544,6 +544,7 @@
   100% {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+    border-color: #e49162;
   }
 }
 
@@ -575,6 +576,7 @@
   100% {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+    border-color: #e49162;
   }
 }
 
@@ -810,6 +812,26 @@
 
 .wsm5 {
   word-spacing: -5px;
+}
+
+.lh1 {
+  line-height: 1;
+}
+
+.lh2 {
+  line-height: 2;
+}
+
+.lh3 {
+  line-height: 3;
+}
+
+.lh4 {
+  line-height: 4;
+}
+
+.lh5 {
+  line-height: 5;
 }
 
 .tal {
@@ -1058,6 +1080,18 @@ h6 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Montserrat, Verdana, sans-serif;
+}
+
+.primarycolor {
+  color: #353434;
+}
+
+.secondarycolor {
+  color: #f2f2f2;
+}
+
+.actioncolor {
+  color: #e49162;
 }
 
 .arrow {
@@ -1480,15 +1514,26 @@ body main .cus #cus .itext input {
   max-height: 40px;
   margin: 0.5rem 0rem 0.5rem 0rem;
   font-size: 1rem;
+  border-radius: 3px;
+  border: 1px solid #828080;
+  outline: none;
+}
+
+body main .cus #cus .itext input:active, body main .cus #cus .itext input:focus, body main .cus #cus .itext textarea:active, body main .cus #cus .itext textarea:focus {
+  border: 1px solid #e59466;
 }
 
 body main .cus #cus .itext textarea {
   width: 100%;
   max-width: 350px;
   max-height: 500px;
+  min-height: 50px;
   margin: 0.5rem 0rem 0.5rem 0rem;
   resize: vertical;
   font-size: 1rem;
+  border-radius: 3px;
+  border: 1px solid #828080;
+  outline: none;
 }
 
 body main .cus #cus button {
@@ -1524,10 +1569,72 @@ body main .cus .cusdetails {
   border-radius: 4px;
 }
 
-body main .cus .cusdetails img {
+body main .cus .cusdetails a {
+  color: #e49162;
+}
+
+body main .cus .cusicon {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+body main .cus .cusicon svg {
   width: 30px;
   height: 30px;
-  margin: 0.5rem;
+  fill: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding-bottom: 2px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+body main .cus .cusicon:hover {
+  border-radius: 50%;
+}
+
+body main .cus .cusicon:hover svg {
+  width: 33px;
+  height: 33px;
+}
+
+body main .cus .cusicon:nth-child(1) {
+  background-color: #353434;
+}
+
+body main .cus .cusicon:nth-child(1):hover {
+  background-color: #4f4d4d;
+}
+
+body main .cus .cusicon:nth-child(2) {
+  background-color: #075e54;
+}
+
+body main .cus .cusicon:nth-child(2):hover {
+  background-color: #0b8d7e;
+}
+
+body main .cus .cusicon:nth-child(3) {
+  background-color: #0088CC;
+}
+
+body main .cus .cusicon:nth-child(3):hover {
+  background-color: #00aaff;
+}
+
+body main .cus .cusicon:nth-child(4) {
+  background-color: #665CAC;
+}
+
+body main .cus .cusicon:nth-child(4):hover {
+  background-color: #867ebd;
 }
 
 @media only screen and (max-height: 500px) {
