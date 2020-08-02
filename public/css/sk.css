@@ -1216,12 +1216,15 @@ body .header .menumob .menuline:nth-child(2) {
 }
 
 body main {
-  height: 100%;
+  height: auto;
+  position: relative;
+  min-height: 100%;
 }
 
 body main .fpagewr {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 body main .fpagewr .fpage {
@@ -1637,10 +1640,8 @@ body main .cus .cusicon:nth-child(4):hover {
   background-color: #867ebd;
 }
 
-@media only screen and (max-height: 500px) {
-  body main .fpagewr {
-    height: auto;
-    width: 100%;
-  }
+body footer {
+  width: 100%;
+  position: rela;
 }
 /*# sourceMappingURL=sk.css.map */

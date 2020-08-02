@@ -350,9 +350,10 @@
                     </div>
                 </section>
             </div>
-            <footer><p style="background:red; ">c122121ontent here,,,</p></footer>
+           
             
         </main>
+         <footer><p style="background:red; ">c122121ontent here,,,</p></footer>
     </div>
     <script lang="text/javascript" src="{{ URL::asset('/js/eff.js') }}"></script>
 </body>

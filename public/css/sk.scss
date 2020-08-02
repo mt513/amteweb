@@ -487,13 +487,14 @@ body {
     }
 
     main {
-        height: 100%;
-
+        height:auto;
+        position: relative;
+        min-height: 100%;
         // flex:1;
 
         .fpagewr {
-            height: 100%;
-            width: 100%;
+            height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
 
             .fpage {
                 width: 100%;
@@ -940,11 +941,10 @@ body {
 
     }
     }
-}
-
-@media only screen and (max-height: 500px) {
-    body main .fpagewr {
-        height: auto;
-        width: 100%;
+    footer{
+        width:100%;
+        position: rela;
     }
 }
+
+

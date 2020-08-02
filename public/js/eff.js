@@ -65,6 +65,9 @@ function smoothScroll(eID){
 
 window.addEventListener("resize",setsbitems);
 
+let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 var restimer;
 var sbitems = document.querySelectorAll('.sbitem');
 function setsbitems(){
