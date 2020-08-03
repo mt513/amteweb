@@ -71,15 +71,10 @@ function smoothScroll(eID){
 
 window.addEventListener("resize",setsbitems);
 
-<<<<<<< HEAD
-        
 
-// var restimer;
-// var sbitems = document.querySelectorAll('.sbitem');
-=======
 var restimer;
 var sbitems = document.querySelectorAll('.sbitem');
->>>>>>> parent of 56489f8... changed layout for mobile and adjusted footer, added JS
+
 function setsbitems(){
 
     // vh = window.innerHeight * 0.01;
