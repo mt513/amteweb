@@ -487,14 +487,18 @@ body {
     }
 
     main {
-        height:auto;
-        position: relative;
-        min-height: 100%;
+        height: 100%;
+
         // flex:1;
 
         .fpagewr {
+<<<<<<< HEAD
       //      height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   //height: calc(var(--vh, 1vh) * 100);
+=======
+            height: 100%;
+            width: 100%;
+>>>>>>> parent of 56489f8... changed layout for mobile and adjusted footer, added JS
 
             .fpage {
                 width: 100%;
@@ -941,10 +945,11 @@ body {
 
     }
     }
-    footer{
-        width:100%;
-        position: rela;
-    }
 }
 
-
+@media only screen and (max-height: 500px) {
+    body main .fpagewr {
+        height: auto;
+        width: 100%;
+    }
+}
