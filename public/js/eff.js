@@ -3,6 +3,10 @@ var arrodn = document.getElementById('arrowdn');
 var body = document.getElementsByTagName('body');
 var header = document.getElementById('header');
 
+var vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+
 ////////////////////////////////////////////////////////////////////////
 // SMOOTH SCROLL //
 ////////////////////////////////////////////////////////////////////////
@@ -63,21 +67,24 @@ function smoothScroll(eID){
 // ITEMS RE-HEIGHT //
 ////////////////////////////////////////////////////////////////////////
 
+
+
 window.addEventListener("resize",setsbitems);
 
+        
 
-
-var restimer;
-var sbitems = document.querySelectorAll('.sbitem');
+// var restimer;
+// var sbitems = document.querySelectorAll('.sbitem');
 function setsbitems(){
 
-  
+    // vh = window.innerHeight * 0.01;
+    // document.documentElement.style.setProperty('--vh', `${vh}px`);
+    console.log(vh);
 
 
     clearTimeout(restimer);
     restimer=setTimeout(function(){
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        
         var max=0; 
         for (let i=0; i<sbitems.length; i++){
             sbitems[i].removeAttribute("style");
@@ -85,7 +92,6 @@ function setsbitems(){
         }
         for (let i=0; i<sbitems.length; i++){
             sbitems[i].style.height=max+"px";
-            console.log(max);
         }
     },150)
 }
